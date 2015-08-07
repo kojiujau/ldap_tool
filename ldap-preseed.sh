@@ -4,7 +4,7 @@
 
 export LDAP_SERVER_IP="ldap://192.168.11.1"
 export BASE_DN="dc=test,dc=com,dc=tw"
-export UTILITYS="ldap-utils libpam-ldap libnss-ldap nslcd"
+export UTILITYS="ldap-utils libpam-ldap libnss-ldap nscd nslcd"
 
 cat> debconf-ldap-preseed.txt <<EOF
 ldap-auth-config    ldap-auth-config/ldapns/ldap-server    string    ${LDAP_SERVER_IP}
